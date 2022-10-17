@@ -1,0 +1,46 @@
+<html>
+
+<head>
+ <link rel="stylesheet" href="dujos.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+ <title>VANDUO</title>
+</head>
+
+<body class="body">
+
+<form>
+<hr />
+<hr />
+<h1 style="color: GREEN; text-align: center;">IKI: <input type="number" id="firstNumber" style="border-radius: 15px 50px 30px 5px; background: GREEN;"/> <h1/>
+<h1 style="color: GREEN; text-align: center;">NUO: <input type="number" id="secondNumber" style="border-radius: 15px 50px 30px 5px; background: GREEN;"/> <h1/> <br />
+<!-- <h1 style="color: black;">SKIRTUMAS: <input type="number" id="thirdNumber" style="border-radius: 15px 50px 30px 5px; background: DarkTurquoise;"/> <h1/> <br /> -->
+
+<script>
+  function multiplyBy()
+{
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        kaina = 0.71
+        skirtumas = num1 - num2
+        suma = skirtumas * kaina
+        pabaiga = suma + 3.99
+        document.getElementById("result").innerHTML = pabaiga;
+}
+
+</script>
+
+<button type="button" onClick="multiplyBy()" Value="Multiply" class="button3 btn btn-light" style="text-align: center;">APSKAIČIUOTI</button>
+
+</form>
+
+<h1  style="color: GREEN; text-align: center;">REZULTATAS :
+<span id = "result"></span>
+</h1>
+
+<a style="margin-left: 50px;" href="../main.html">
+  <button type="button" class="button3 btn btn-light">ATGAL</button>
+</a>
+
+</body>
+
+</html>

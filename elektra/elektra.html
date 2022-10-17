@@ -1,0 +1,85 @@
+<html>
+
+<head>
+ <link rel="stylesheet" href="elektra.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+ <title>VANDUO</title>
+</head>
+
+<body class="body">
+
+<form>
+<hr />
+<h1 style="color: white;">DIENINIS</h1>
+<hr />
+<h1 style="color: white;">IKI: <input type="number" id="firstNumber" style="border-radius: 15px 50px 30px 5px; background: lightBlue;"/> <h1/>
+<h1 style="color: white;">NUO: <input type="number" id="secondNumber" style="border-radius: 15px 50px 30px 5px; background: lightBlue;"/> <h1/> <br />
+<!-- <h1 style="color: black;">SKIRTUMAS: <input type="number" id="thirdNumber" style="border-radius: 15px 50px 30px 5px; background: DarkTurquoise;"/> <h1/> <br /> -->
+
+<script>
+  function multiplyBy()
+{
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        kaina = 0.24
+        skirtumas = num1 - num2
+        suma = skirtumas * kaina
+        document.getElementById("result").innerHTML = suma;
+}
+
+</script>
+
+<button type="button" onClick="multiplyBy()" Value="Multiply" class="button3 btn btn-light">APSKAIČIUOTI</button>
+
+</form>
+
+<h1  style="color: white;">REZULTATAS :
+<span id = "result"></span>
+</h1>
+
+
+<form>
+<hr />
+<h1 style="color: white;">NAKTINIS</h1>
+<hr />
+<h1 style="color: white;">IKI: <input type="number" id="firstNumberr" style="border-radius: 15px 50px 30px 5px; background: white;"/> <h1/>
+<h1 style="color: white;">NUO: <input type="number" id="secondNumberr" style="border-radius: 15px 50px 30px 5px; background: white;"/> <h1/> <br />
+<!-- <h1 style="color: black;">SKIRTUMAS: <input type="number" id="thirdNumber" style="border-radius: 15px 50px 30px 5px; background: DarkTurquoise;"/> <h1/> <br /> -->
+
+<script>
+  function multiplyByy()
+{
+        num3 = document.getElementById("firstNumberr").value;
+        num4 = document.getElementById("secondNumberr").value;
+        kainaa = 0.24
+        skirtumass = num3 - num4
+        sumaa = skirtumass * kainaa
+        document.getElementById("resultt").innerHTML = sumaa;
+
+        num = suma
+        numm = sumaa
+        PABAIGA = suma + sumaa
+        document.getElementById("resulttat").innerHTML = PABAIGA;
+}
+
+</script>
+
+<button type="button" onClick="multiplyByy()" Value="Multiply" class="button3 btn btn-light">APSKAIČIUOTI</button>
+
+</form>
+
+<h1  style="color: white;">REZULTATAS :
+<span id = "resultt"></span>
+</h1>
+
+<h1  style="color: white;">SUMA :
+<span id = "resulttat"></span>
+</h1>
+
+<a style="margin-left: 50px;" href="../main.html">
+  <button type="button" class="button3 btn btn-light">ATGAL</button>
+</a>
+
+</body>
+
+</html>
